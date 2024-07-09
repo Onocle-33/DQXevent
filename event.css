@@ -73,7 +73,7 @@ body{
         #46275C 20%, 
         #46275C 80%, 
         #00000000 100%, transparent);
-    position: absolute;
+    position: relative;
     font-size:xx-large;
     color:#E3E3E3;
     opacity: 0;
@@ -94,7 +94,7 @@ body{
         #46275C 20%, 
         #46275C 80%, 
         #00000000 100%, transparent);
-    position: absolute;
+    position: relative;
     font-size:large;
     color: #E3E3E3;
     opacity: 0;
