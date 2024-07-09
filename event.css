@@ -26,12 +26,12 @@ body{
     width: 100vw;
     z-index:-10;
     background-size:2000px;
-    background-repeat: no-repeat;
+    background-repeat:repeat;
     overflow:hidden;
 }
 .lgBox{
     text-align: center;
-    position:fixed;
+    position:relative;
     display: block;
     top: 0px;
     left:0px;
@@ -97,7 +97,7 @@ body{
     font-size:large;
     color: #E3E3E3;
     opacity: 0;
-    top:380px;
+    top:400px;
     left:0;
     z-index: 120;
     background-size: cover;
@@ -271,7 +271,8 @@ body{
     height: 100vh;
     z-index: 0;
     opacity: 1;
-    overflow: scroll;
+    overflow-y: scroll;
+    overflow-x:hidden;
     /*display:inline-block;*/
 }
 #home.close{
@@ -283,7 +284,8 @@ body{
     animation-fill-mode: forwards;
     animation-duration: 0.5s;
     animation-timing-function: ease;
-    overflow: hidden;
+    overflow-y: hidden;
+    overflow-x:hidden;
 }
 #home.active{
     position: absolute;
@@ -294,7 +296,8 @@ body{
     animation-fill-mode: forwards;
     animation-duration: 0.5s;
     animation-timing-function: ease;
-    overflow:scroll;
+    overflow-y:scroll;
+    overflow-x:hidden;
 }
 #guide{
     position: absolute;
