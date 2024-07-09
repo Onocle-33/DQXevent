@@ -1,5 +1,5 @@
 body{
-    position: relative;
+    position: absolute;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -31,7 +31,7 @@ body{
     display: block;
     top: 0px;
     left:0px;
-    z-index: -30;
+    z-index: -5;
     height: 330px;
     width: 100vw;
     margin: 0 auto;
@@ -59,7 +59,7 @@ body{
     height: 100vh;
     width: 100vw;
     background-size: cover;
-    z-index: -10;
+    z-index: -5;
 
 }
 #msg{
@@ -69,11 +69,13 @@ body{
         #46275C 20%, 
         #46275C 80%, 
         #00000000 100%, transparent);
-    position: relative;
+    position: absolute;
     font-size:xx-large;
     color:#E3E3E3;
     opacity: 0;
     top: 0px;
+    left: 0;
+    z-index: 120;
     background-size: cover;
     animation-name: msgAnime;
     animation-delay: 1.5s;
@@ -88,11 +90,13 @@ body{
         #46275C 20%, 
         #46275C 80%, 
         #00000000 100%, transparent);
-    position: relative;
+    position: absolute;
     font-size:large;
     color: #E3E3E3;
     opacity: 0;
-    top:0px;
+    top:140px;
+    left:0;
+    z-index: 120;
     background-size: cover;
     animation-name: msgAnime;
     animation-delay: 2.5s;
