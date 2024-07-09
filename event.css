@@ -27,7 +27,7 @@ body{
     z-index:-10;
     background-size:2000px;
     background-repeat:repeat;
-    overflow:hidden;
+    overflow:visible;
 }
 .lgBox{
     text-align: center;
