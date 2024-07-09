@@ -56,14 +56,14 @@ body{
 
 }
 #msgBox{
-    position: fixed;
-    margin: 0 auto;
+    position: relative;
+    padding: 1px;
     top: 250px;
     left: 0px;
     height: 100vh;
     width: 100vw;
+    
     background-size: cover;
-    z-index: -5;
 
 }
 #msg{
@@ -267,18 +267,18 @@ body{
 }
 
 #home{
-    position:relative;
-    width: 0;
-    height: 0;
+    position:absolute;
+    width: 100vw;
+    height: 100vh;
     z-index: 0;
     opacity: 1;
     overflow: scroll;
-    display:inline-block;
+    /*display:inline-block;*/
 }
 #home.close{
-    position: relative;
-    width: 0;
-    height: 0;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
     z-index: -10;
     animation-name: closePageAnime;
     animation-fill-mode: forwards;
@@ -287,9 +287,9 @@ body{
     overflow: hidden;
 }
 #home.active{
-    position: relative;
-    width: 0;
-    height: 0;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
     z-index: 0;
     animation-name: fadeInAnime;
     animation-fill-mode: forwards;
