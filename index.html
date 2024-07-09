@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <link href="event.css" rel="stylesheet"
+        type="text/css" media="all">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width">
+    <title>青い帽子の不思議な館</title>
+    
+  </head> 
+
+  <script src="event.js"></script>
+  <body>
+    
+
+    <div id="bg">
+    </div>
+    <div id="home">
+        <div id="msgBox">
+            <p id="msg">ようこそ、ここは<br>とある占い師が住む不思議な館。</p>
+            <p id="msg2">気まぐれな占い師が、風の吹くまま気の向くまま
+                <br>ひっそりと喫茶店を開いています。
+            </p>
+        </div>
+        <div class="lgBox">
+            <img src="img/lg.png" class="lg">
+        </div>
+    </div>
+    
+    <div id="guide">
+        <div id="guideMsgBox">
+            <p id="guideMsg">GUIDE</p>
+        </div>
+        <div id="add">
+            <p><br>
+                住所：アズラン住宅村 おごそかな林道地区<br>
+                8700丁目 7番地 地下1階
+            </p>
+            <img id="ss" src="img/20240628-0441_703209861.jpg">
+        </div>
+        <br>
+        <div id="goto">
+            <p><br>
+                ～ルート案内～<br><br>
+                館内へ入られましたら、<br>
+                左手の階段から地下へお進みください。
+            </p>
+            <img id="ss" src="img/guide.jpg">
+            <p><br><br>
+                中央の扉の先が会場です。
+            </p>
+            <img id="ss" src="img/guide2.jpg">
+        </div>
+    </div>
+
+    <div id="fd">
+        <div id="guideMsgBox">
+            <p id="guideMsg">MENU</p>
+        </div>
+        <div id="coffeeBox">
+            <p id="coffee">coffee</p>
+            <p id="coffeeMenu">
+                ・気まぐれブレンド(まほうのせいすい)<br>
+                　-700G<br>
+                ・キリカプレミアム(ようせいの霊薬)<br>
+                　-2500G<br>
+                ・ランドンマウンテン(つきのめぐみ)<br>
+                　-20000G<br>
+                ・占い師のぼったくりブレンド(まほうの小ビン)<br>
+                　-1000万G<br>
+            </p>
+        </div>
+        <div id="teaBox">
+            <p id="tea">tea</p>
+            <p id="teaMenu">
+                ・ピーチ&アプリコット(けんじゃのせいすい)<br>
+                　-1000G<br>
+                ・レモン&ハニー(せかいじゅのしずく)<br>
+                　-9000G<br>
+            </p>
+        </div>
+        <div id="foodBox">
+            <p id="food">food</p>
+            <p id="foodMenu">
+                全品1200G<br><br>
+                ・王都の桜もち<br>
+                ・銘菓 砂漠の月<br>
+                ・アクロバットケーキ<br>
+                ・とこなつココナッツ<br>
+                ・女王様サブレ<br><br>
+                その他職人料理が売られているかも。
+            </p>
+        </div>
+    </div>
+    
+    <div id="gr">
+        <div id="guideMsgBox">
+            <p id="guideMsg">GALLERY</p>
+        </div>
+        <div id="grBox">
+                <img id="grss2" src="img/gr.jpg">
+                <img id="grss2" src="img/gr2.jpg">
+                <br>
+                <img id="grss2" src="img/gr3.jpg">
+                <img id="grss2" src="img/gr4.jpg">
+        </div>
+    </div>
+    <div id="event">
+        <div id="guideMsgBox">
+            <p id="guideMsg">EVENT</p>
+        </div>
+        <div id="nsBox">
+            <p>イベントの予定は冒険者の広場から<br>冒険日誌をご確認ください。</p>
+            <a href="https://hiroba.dqx.jp/sc/diary/809135868471/mode/2/page/0/"
+            id="hiroba">
+                冒険者の広場リンク
+            </a>
+            <p></p>
+        </div>
+        
+    </div>
+
+    <div id="hmbOver">
+        <div id="linkBox">
+            <a href="#" id="link" onclick=pageCng(0)>
+                HOME
+            </a>
+            <a href="#" id="link" onclick=pageCng(1)>
+                GUIDE
+            </a>
+            <a href="#" id="link" onclick=pageCng(2)>
+                MENU
+            </a>
+            <a href="#" id="link" onclick=pageCng(3)>
+                GALLERY
+            </a>
+            <a href="#" id="link" onclick=pageCng(4)>
+                EVENT
+            </a>
+        </div>
+    </div>
+        
+    <a href="#" id="hmb">
+        <img src="img/x.png" id="hmbImgX" class="">
+        <img src="img/hmb.png" id="hmbImg" class=""  onclick=hmbCng()>
+    </a>
+      
+  </body>
+</html>

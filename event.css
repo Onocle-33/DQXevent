@@ -1,0 +1,701 @@
+body{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family:"MS P明朝","MS 明朝", serif;
+    color:#E3E3E3;
+    overflow: hidden;
+    z-index: -20;
+    background-color: rgb(2, 27, 99);
+    background-position: center;
+
+}
+
+#bg{
+    position: absolute;
+    background-image:url(img/20240628-0713_703213658.jpg);
+    background-attachment:fixed;
+    background-position: 0,-0;
+    text-align: left;
+    height: 100vw;
+    width: 100vw;
+    z-index:-10;
+    background-size:2000px;
+    background-repeat: no-repeat;
+    overflow:hidden;
+}
+.lgBox{
+    text-align: center;
+    position:fixed;
+    display: block;
+    top: 0px;
+    left:0px;
+    z-index: -30;
+    height: 330px;
+    width: 100vw;
+    margin: 0 auto;
+
+}
+.lg{
+    position: relative;
+    display: block;
+    top: 100px;
+    margin:0 auto;
+    width:330px;
+    height:330px;
+    z-index: 90;
+    animation-name: lgAnime;
+    animation-fill-mode: forwards;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+
+}
+#msgBox{
+    position: fixed;
+    top: 250px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    margin: 0 auto;
+
+}
+#msg{
+    /*background-color: rgb(51, 15, 54);*/
+    background-image: linear-gradient(
+        to right, transparent, #7802e600 0%, 
+        #46275C 20%, 
+        #46275C 80%, 
+        #00000000 100%, transparent);
+    position: relative;
+    font-size:xx-large;
+    color:#E3E3E3;
+    opacity: 0;
+    top: 0px;
+    background-size: cover;
+    animation-name: msgAnime;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+}
+
+#msg2{
+    background-image: linear-gradient(
+        to right, transparent, #7802e600 0%, 
+        #46275C 20%, 
+        #46275C 80%, 
+        #00000000 100%, transparent);
+    position: relative;
+    font-size:large;
+    color: #E3E3E3;
+    opacity: 0;
+    top:0px;
+    background-size: cover;
+    animation-name: msgAnime;
+    animation-delay: 2.5s;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+}
+#hmbOver{
+    opacity: 0;
+    text-align: left;
+    display: block;
+    position: absolute;
+    top: 0px;
+    left:0px;
+    z-index: 100;
+    height: 400px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+#hmbOver.close{
+    background-image: linear-gradient(
+        to right, transparent, #631446 0%, 
+        #631446 90%, 
+        #00000000 100%, transparent);
+    text-align: left;
+    display: block;
+    position: absolute;
+    top: 0px;
+    left:0px;
+    z-index: 100;
+    height: 400px;
+    margin: 0 auto;
+    animation-name: closeAnime;
+    animation-fill-mode: forwards;
+    animation-duration: 0.25s;
+    animation-timing-function: ease-out;
+    overflow: hidden;
+}
+#hmbOver.active{
+    background-image: linear-gradient(
+        to right, transparent, #631446 0%, 
+        #631446 90%, 
+        #00000000 100%, transparent);
+    display: block;
+    position: absolute;
+    top: 0px;
+    height: 400px;
+    z-index: 100;
+    margin: 0 auto;
+    animation-name: openAnime;
+    animation-fill-mode: forwards;
+    animation-duration: 0.25s;
+    animation-timing-function: ease-out;
+    overflow: hidden;
+}
+#hmb{
+    position: absolute;
+    z-index: 150;
+    top: 0px;
+    left:0px;
+    width:75px;
+    height: 75px;
+    display: inline-block;
+    overflow:hidden;
+}
+#hmbImg{
+    opacity: 0;
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width:50px;
+    height:50px;
+    z-index: 120;
+    animation-name: rollAnime;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+    animation-duration: 1.5s;
+    animation-timing-function: ease;
+}
+#hmbImg.close{
+    opacity: 0;
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width:50px;
+    height:50px;
+    z-index: 120;
+    animation-name: rollAnime2;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+    animation-duration: 0.25s;
+    animation-timing-function: ease;
+}
+#hmbImg.active{
+    opacity: 0;
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width:50px;
+    height:50px;
+    z-index: 120;
+    animation-name: rollAnime;
+    animation-fill-mode: forwards;
+    animation-delay: 0.1s;
+    animation-duration: 0.5s;
+    animation-timing-function: ease;
+}
+
+
+#hmbImgX{
+    opacity: 0;
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 120;
+    width:50px;
+    height:50px;
+}
+#hmbImgX.close{
+    opacity: 0;
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width:50px;
+    height:50px;
+    z-index: 120;
+    animation-name: rollAnime;
+    animation-fill-mode: forwards;
+    animation-delay: 0.1s;
+    animation-duration: 0.5s;
+    animation-timing-function: ease;
+}
+#hmbImgX.active{
+    opacity: 0;
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width:50px;
+    height:50px;
+    z-index: 120;
+    animation-name: rollAnime2;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+    animation-duration: 0.25s;
+    animation-timing-function: ease;
+}
+
+#home{
+    position:relative;
+    width: 0;
+    height: 0;
+    z-index: 0;
+    opacity: 1;
+    overflow: scroll;
+    display:inline-block;
+}
+#home.close{
+    position: relative;
+    width: 0;
+    height: 0;
+    z-index: -10;
+    animation-name: closePageAnime;
+    animation-fill-mode: forwards;
+    animation-duration: 0.5s;
+    animation-timing-function: ease;
+    overflow: hidden;
+}
+#home.active{
+    position: relative;
+    width: 0;
+    height: 0;
+    z-index: 0;
+    animation-name: fadeInAnime;
+    animation-fill-mode: forwards;
+    animation-duration: 0.5s;
+    animation-timing-function: ease;
+    overflow:visible;
+}
+#guide{
+    position: absolute;
+    opacity: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -10;
+    top:0;
+    overflow:hidden;
+}
+#guide.active{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+    top:0;
+    animation-name: fadeInAnime;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    overflow-y: scroll;
+}
+#guide.close{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: -10;
+    top:0;
+    animation-name: closePageAnime;
+    animation-fill-mode: forwards;
+    animation-duration: 0.5s;
+    animation-timing-function: ease;
+    overflow: hidden;
+}
+
+#fd{
+    position: absolute;
+    opacity: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -10;
+    top:0;
+    overflow:hidden;
+}
+#fd.active{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+    top:0;
+    animation-name: fadeInAnime;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    overflow-y: scroll;
+}
+#fd.close{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: -10;
+    top:0;
+    animation-name: closePageAnime;
+    animation-fill-mode: forwards;
+    animation-duration: 0.5s;
+    animation-timing-function: ease;
+    overflow: hidden;
+}
+#gr{
+    position: absolute;
+    opacity: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -10;
+    top:0;
+    overflow:hidden;
+}
+#gr.active{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+    top:0;
+    animation-name: fadeInAnime;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    overflow-y: scroll;
+}
+#gr.close{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: -10;
+    top:0;
+    animation-name: closePageAnime;
+    animation-fill-mode: forwards;
+    animation-duration: 0.5s;
+    animation-timing-function: ease;
+    overflow: hidden;
+}
+#event{
+    position: absolute;
+    opacity: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -10;
+    top:0;
+    overflow:hidden;
+}
+#event.active{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+    top:0;
+    animation-name: fadeInAnime;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    overflow-y: scroll;
+}
+#event.close{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: -10;
+    top:0;
+    animation-name: closePageAnime;
+    animation-fill-mode: forwards;
+    animation-duration: 0.5s;
+    animation-timing-function: ease;
+    overflow: hidden;
+}
+
+#guideMsgBox{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+
+}
+#guideMsg{
+    /*background-color: rgb(51, 15, 54);*/
+    background-image: linear-gradient(
+        to right, transparent, #7802e600 0%, 
+        #46275C 20%, 
+        #46275C 80%, 
+        #00000000 100%, transparent);
+    position: relative;
+    font-size:xx-large;
+    color:#E3E3E3;
+    top: 0px;
+}
+#coffeeBox{
+    background-image: linear-gradient(
+        to right, transparent, #7802e600 0%, 
+        #46275C 20%, 
+        #46275C 80%, 
+        #00000000 100%, transparent);
+    position: absolute;
+    top: 100px;
+    left: 0px;
+    width: 100%;
+    background-size: cover;
+
+}
+#coffee{
+    /*background-color: rgb(51, 15, 54);*/
+    position: relative;
+    font-size:xx-large;
+    color:#E3E3E3;
+    top: -25px;
+}
+#coffeeMenu{
+    position: relative;
+    font-size:medium;
+    color:#E3E3E3;
+    top: -40px;
+
+}
+#teaBox{
+    background-image: linear-gradient(
+        to right, transparent, #7802e600 0%, 
+        #46275C 20%, 
+        #46275C 80%, 
+        #00000000 100%, transparent);
+    position: absolute;
+    top: 450px;
+    left: 0px;
+    width: 100%;
+    background-size: cover;
+}
+#tea{
+    /*background-color: rgb(51, 15, 54);*/
+    position: relative;
+    font-size:xx-large;
+    color:#E3E3E3;
+    top: -25px;
+}
+#teaMenu{
+    position: relative;
+    font-size:medium;
+    color:#E3E3E3;
+    top: -40px;
+}
+#foodBox{
+    background-image: linear-gradient(
+        to right, transparent, #7802e600 0%, 
+        #46275C 20%, 
+        #46275C 80%, 
+        #00000000 100%, transparent);
+    position: absolute;
+    top: 695px;
+    left: 0px;
+    width: 100%;
+    background-size: cover;
+}
+#food{
+    /*background-color: rgb(51, 15, 54);*/
+    position: relative;
+    font-size:xx-large;
+    color:#E3E3E3;
+    top: -25px;
+}
+#foodMenu{
+    position: relative;
+    font-size:medium;
+    color:#E3E3E3;
+    top: -40px;
+}
+#add{
+    background-image: linear-gradient(
+        to right, transparent, #7802e600 0%, 
+        #46275C 30%, 
+        #46275C 70%, 
+        #00000000 100%, transparent);
+    font-size: large;
+    position: absolute;
+    top:110px;
+    width: 100%;
+}
+#goto{
+    background-image: linear-gradient(
+        to right, transparent, #7802e600 0%, 
+        #46275C 30%, 
+        #46275C 70%, 
+        #00000000 100%, transparent);
+    font-size: large;
+    position: absolute;
+    top:700px;
+    width: 100%;
+}
+#ss{
+    position: relative;
+    top:0px;
+    width: 640px;
+    height: 360px;
+}
+#grBox{
+    background-image: linear-gradient(
+        to right, transparent, #7802e600 0%, 
+        #46275C 20%, 
+        #46275C 80%, 
+        #00000000 100%, transparent);
+    position: absolute;
+    top: 100px;
+    left: 0px;
+    width: 100vw;
+    background-size: cover;
+
+}
+#grss{
+    list-style: none;
+    display: flex;
+    position: relative;
+    width: 100%;
+    top: 0px;
+}
+#grss2{
+    position: relative;
+    top:5px;
+    width: 320px;
+    height: 180px;
+}
+#nsBox{
+    background-image: linear-gradient(
+        to right, transparent, #7802e600 0%, 
+        #46275C 20%, 
+        #46275C 80%, 
+        #00000000 100%, transparent);
+    position: absolute;
+    top: 100px;
+    left: 0px;
+    width: 100vw;
+    background-size: cover;
+
+}
+#hiroba{
+    color: aqua;
+}
+#linkBox{
+    font-size: x-large;
+    position: relative;
+    text-align: center;
+    top:50px;
+    width: 100%;
+    height: 100%;
+}
+#link{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    color: #E3E3E3;
+    width:100%;
+    height: 20px;
+    z-index: 120;
+
+}
+@keyframes lgAnime{
+    0%{
+        top:100px;
+        opacity: 0;
+    }
+    60%{
+        top:100px;
+    }
+    100%{
+        opacity: 1;
+        top: 0px;
+    }
+}
+
+@keyframes fadeInAnime{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes openAnime{
+    0%{
+        width: 0px;
+        opacity: 0;
+    }
+    100%{
+        width: 300px;
+        opacity: 1;
+    }
+}
+@keyframes closeAnime{
+    0%{
+        width: 300px;
+        opacity: 1;
+    }
+    100%{
+        width: 0px;
+        opacity: 0;
+    }
+}
+@keyframes closePageAnime{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+@keyframes msgAnime{
+    0%{
+        right:-2%;
+        opacity: 0;
+    }
+    100%{
+        right:0%;
+        opacity: 1;
+    }
+
+}
+@keyframes rollAnime{
+    0%{ 
+        opacity: 0;
+        transform:rotate(330deg);
+    }
+    100%{ 
+        opacity: 1;
+        transform:rotate(360deg); 
+    }
+  }
+  @keyframes rollAnime2{
+      0%{ 
+          opacity: 1;
+          transform:rotate(0deg);
+      }
+      100%{ 
+          opacity: 0;
+          transform:rotate(30deg); 
+      }
+    }
+  @keyframes hmbOpenAnime{
+    0%{ 
+        transform:rotate(0deg);
+    }
+    100%{ 
+        transform:rotate(90deg); 
+    }
+
+  }
