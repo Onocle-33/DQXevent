@@ -78,7 +78,6 @@ body{
     color:#E3E3E3;
     opacity: 0;
     top: 0px;
-    left: 0;
     z-index: 120;
     background-size: cover;
     animation-name: msgAnime;
@@ -98,8 +97,7 @@ body{
     font-size:large;
     color: #E3E3E3;
     opacity: 0;
-    top:140px;
-    left:0;
+    top:0px;
     z-index: 120;
     background-size: cover;
     animation-name: msgAnime;
