@@ -87,6 +87,30 @@ body{
     animation-timing-function: ease-out;
 }
 
+@media screen and (max-width:768px) {
+    #msg{
+        /*background-color: rgb(51, 15, 54);*/
+        background-image: linear-gradient(
+            to right, transparent, #7802e600 0%, 
+            #46275C 20%, 
+            #46275C 80%, 
+            #00000000 100%, transparent);
+        position: absolute;
+        font-size:x-large;
+        color:#E3E3E3;
+        opacity: 0;
+        top: 250px;
+        left:0;
+        z-index: 120;
+        background-size: cover;
+        animation-name: msgAnime;
+        animation-delay: 1.5s;
+        animation-fill-mode: forwards;
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
+    }
+    
+}
 #msg2{
     background-image: linear-gradient(
         to right, transparent, #7802e600 0%, 
@@ -106,6 +130,29 @@ body{
     animation-fill-mode: forwards;
     animation-duration: 1s;
     animation-timing-function: ease-out;
+}
+@media screen and (max-width:768px) {
+    #msg2{
+        background-image: linear-gradient(
+            to right, transparent, #7802e600 0%, 
+            #46275C 20%, 
+            #46275C 80%, 
+            #00000000 100%, transparent);
+        position: absolute;
+        font-size:medium;
+        color: #E3E3E3;
+        opacity: 0;
+        top:350px;
+        left:0;
+        z-index: 120;
+        background-size: cover;
+        animation-name: msgAnime;
+        animation-delay: 2.5s;
+        animation-fill-mode: forwards;
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
+    }
+    
 }
 #hmbOver{
     opacity: 0;
