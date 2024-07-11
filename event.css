@@ -518,7 +518,7 @@ body{
     color:#E3E3E3;
     top: 0px;
 }
-#coffeeBox{
+#menuBox{
     background-image: linear-gradient(
         to right, transparent, #7802e600 0%, 
         #46275C 20%, 
@@ -526,6 +526,19 @@ body{
         #00000000 100%, transparent);
     position: absolute;
     top: 100px;
+    left: 0px;
+    width: 100%;
+    background-size: cover;
+
+}
+#coffeeBox{
+    background-image: linear-gradient(
+        to right, transparent, #7802e600 0%, 
+        #46275C 20%, 
+        #46275C 80%, 
+        #00000000 100%, transparent);
+    position: absolute;
+    top: 200px;
     left: 0px;
     width: 100%;
     background-size: cover;
@@ -552,7 +565,7 @@ body{
         #46275C 80%, 
         #00000000 100%, transparent);
     position: absolute;
-    top: 450px;
+    top: 550px;
     left: 0px;
     width: 100%;
     background-size: cover;
@@ -577,7 +590,7 @@ body{
         #46275C 80%, 
         #00000000 100%, transparent);
     position: absolute;
-    top: 695px;
+    top: 795px;
     left: 0px;
     width: 100%;
     background-size: cover;
