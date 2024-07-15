@@ -94,12 +94,12 @@ header{
 
 }
 #msgBox{
-    position: fixed;
+    position: absolute;
     margin:0 auto;
     padding: 3px;
     height: 500px;
     width: 100vw;
-    
+    top:0px;
 
 }
 #msg{
@@ -109,12 +109,12 @@ header{
         #46275C 20%, 
         #46275C 80%, 
         #00000000 100%, transparent);
-    position: relative;
+    position: absolute;
     font-size:xx-large;
     color:#E3E3E3;
     opacity: 0;
     width: 100vw;
-    top: -30px;
+    top: 300px;
     z-index: 120;
     padding: 3px;
     background-size: cover;
@@ -133,12 +133,12 @@ header{
             #46275C 20%, 
             #46275C 80%, 
             #00000000 100%, transparent);
-        position: relative;
+        position: absolute;
         font-size:x-large;
         color:#E3E3E3;
         opacity: 0;
         width: 100vw;
-        top: 0px;
+        top: 300px;
         z-index: 120;
         padding: 3px;
         background-size: cover;
@@ -156,12 +156,12 @@ header{
         #46275C 20%, 
         #46275C 80%, 
         #00000000 100%, transparent);
-    position: relative;
+    position: absolute;
     font-size:large;
     color: #E3E3E3;
     opacity: 0;
     width: 100vw;
-    top:-30px;
+    top:440px;
     z-index: 120;
     padding: 3px;
     background-size: cover;
@@ -178,12 +178,12 @@ header{
             #46275C 20%, 
             #46275C 80%, 
             #00000000 100%, transparent);
-        position: relative;
+        position: absolute;
         font-size:medium;
         color: #E3E3E3;
         opacity: 0;
         width: 100vw;
-        top:0px;
+        top:400px;
         z-index: 120;
         padding: 3px;
         background-size: cover;
