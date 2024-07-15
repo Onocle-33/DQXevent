@@ -94,7 +94,7 @@ header{
 
 }
 #msgBox{
-    position: absolute;
+    position: fixed;
     padding: 3px;
     top: 50px;
     left: 0px;
@@ -116,7 +116,6 @@ header{
     opacity: 0;
     width: 100vw;
     top: 250px;
-    left:0;
     z-index: 120;
     padding: 3px;
     background-size: cover;
@@ -141,7 +140,6 @@ header{
         opacity: 0;
         width: 100vw;
         top: 250px;
-        left:0;
         z-index: 120;
         padding: 3px;
         background-size: cover;
@@ -165,7 +163,6 @@ header{
     opacity: 0;
     width: 100vw;
     top:400px;
-    left:0;
     z-index: 120;
     padding: 3px;
     background-size: cover;
@@ -188,7 +185,6 @@ header{
         opacity: 0;
         width: 100vw;
         top:350px;
-        left:0;
         z-index: 120;
         padding: 3px;
         background-size: cover;
