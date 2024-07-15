@@ -4,6 +4,8 @@ body{
     padding: 0;
     top:0;
     left:0;
+    width: 100vw;
+    height: 100vh;
     text-align: center;
     font-family:"MS P明朝","MS 明朝", serif;
     color:#E3E3E3;
@@ -112,6 +114,7 @@ header{
     font-size:xx-large;
     color:#E3E3E3;
     opacity: 0;
+    width: 100vw;
     top: 250px;
     left:0;
     z-index: 120;
@@ -203,7 +206,6 @@ header{
     display: block;
     position: absolute;
     top: 0px;
-    width: 100vw;
     left:0px;
     z-index: 100;
     height: 400px;
