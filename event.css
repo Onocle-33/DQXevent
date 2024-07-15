@@ -99,8 +99,6 @@ header{
     padding: 3px;
     height: 500px;
     width: 100vw;
-    top: 50px;
-    left: 0px;
     
 
 }
@@ -116,7 +114,7 @@ header{
     color:#E3E3E3;
     opacity: 0;
     width: 100vw;
-    top: 250px;
+    top: -30px;
     z-index: 120;
     padding: 3px;
     background-size: cover;
@@ -140,7 +138,7 @@ header{
         color:#E3E3E3;
         opacity: 0;
         width: 100vw;
-        top: 250px;
+        top: 0px;
         z-index: 120;
         padding: 3px;
         background-size: cover;
@@ -163,7 +161,7 @@ header{
     color: #E3E3E3;
     opacity: 0;
     width: 100vw;
-    top:240px;
+    top:-30px;
     z-index: 120;
     padding: 3px;
     background-size: cover;
@@ -185,7 +183,7 @@ header{
         color: #E3E3E3;
         opacity: 0;
         width: 100vw;
-        top:240px;
+        top:0px;
         z-index: 120;
         padding: 3px;
         background-size: cover;
