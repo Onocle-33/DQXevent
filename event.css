@@ -95,11 +95,12 @@ header{
 }
 #msgBox{
     position: fixed;
+    margin:0 auto;
     padding: 3px;
-    top: 50px;
-    left: 0px;
     height: 500px;
     width: 100vw;
+    top: 50px;
+    left: 0px;
     
 
 }
