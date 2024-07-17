@@ -577,6 +577,20 @@ header{
     width: 100%;
     padding: 3px;
 }
+@media screen and (max-width:768px) {
+    #goto{
+        background-image: linear-gradient(
+            to right, transparent, #7802e600 0%, 
+            #46275C 20%, 
+            #46275C 80%, 
+            #00000000 100%, transparent);
+        font-size: large;
+        position: absolute;
+        top:550px;
+        width: 100%;
+        padding: 3px;
+    }
+}
 #menuBox{
     position: absolute;
     top: 150px;
@@ -702,6 +716,15 @@ header{
     width: 640px;
     height: 360px;
     padding: 3px;
+}
+@media screen and (max-width:768px) {
+    #ss{
+        position: relative;
+        top:0px;
+        width: 320px;
+        height: 180px;
+        padding: 3px;
+    }
 }
 #grBox{
     background-image: linear-gradient(
