@@ -4,6 +4,11 @@
 
     <url>
         <loc>https://bluehut.netlify.app/</loc>
+        <lastmod>2024-07-17</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
         <loc>https://dqxdecker.netlify.app/</loc>
         <lastmod>2024-07-17</lastmod>
         <changefreq>always</changefreq>
