@@ -204,7 +204,7 @@ header{
     position: absolute;
     font-size:large;
     color: #E3E3E3;
-    opacity: 0;
+    opacity: 1;
     width: 100vw;
     top:540px;
     z-index: 120;
@@ -221,7 +221,7 @@ header{
         position: absolute;
         font-size:medium;
         color: #E3E3E3;
-        opacity: 0;
+        opacity: 1;
         width: 100vw;
         top:500px;
         z-index: 120;
