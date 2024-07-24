@@ -714,12 +714,44 @@ header{
     top: -32px;
     padding: 3px;
 }
+#iceBox{
+    position: relative;
+    left: 0px;
+    width: 100%;
+    background-size: cover;
+    top: 425px;
+}
 #foodBox{
     position: relative;
     left: 0px;
     width: 100%;
     background-size: cover;
     top: 425px;
+}
+#ice{
+    position: relative;
+    background-image: linear-gradient(
+        to right, transparent, #7802e600 0%, 
+        #46275C 20%, 
+        #46275C 80%, 
+        #00000000 100%, transparent);
+    /*background-color: rgb(51, 15, 54);*/
+    font-size:xx-large;
+    color:#E3E3E3;
+    top: 0px;
+    padding: 3px;
+}
+#iceMenu{
+    position: relative;
+    background-image: linear-gradient(
+        to right, transparent, #7802e600 0%, 
+        #46275C 20%, 
+        #46275C 80%, 
+        #00000000 100%, transparent);
+    font-size:medium;
+    color:#E3E3E3;
+    top: -32px;
+    padding: 3px;
 }
 #food{
     position: relative;
