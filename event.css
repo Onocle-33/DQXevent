@@ -50,10 +50,10 @@ body{
 }
 header{
     background-image: linear-gradient(
-        to right, transparent, #46275c7b 0%, 
-        #46275C 10%, 
-        #46275C 90%, 
-        #46275c7b 100%, transparent);
+        to right, transparent, #1e5dc238 0%, 
+        #1f2356 10%, 
+        #1f2356 90%, 
+        #1e5dc238 100%, transparent);
     position: fixed;
     width: 100%;
     height: 85px;
