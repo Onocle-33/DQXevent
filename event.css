@@ -563,6 +563,40 @@ header{
     overflow: hidden;
 }
 
+#note{
+    position: absolute;
+    opacity: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -10;
+    top:0;
+    overflow:hidden;
+}
+#note.active{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: 60;
+    top:0;
+    animation-name: fadeInAnime;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    overflow-y: scroll;
+}
+#note.close{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: -10;
+    top:0;
+    animation-name: closePageAnime;
+    animation-fill-mode: forwards;
+    animation-duration: 0.5s;
+    animation-timing-function: ease;
+    overflow: hidden;
+}
+
 #guideMsgBox{
     position: relative;
     top: 60px;
@@ -836,6 +870,20 @@ header{
 }
 #hiroba{
     color: aqua;
+}
+#noteBox{
+    background-image: linear-gradient(
+        to right, transparent, #7802e600 0%, 
+        #46275C 20%, 
+        #46275C 80%, 
+        #00000000 100%, transparent);
+    position: absolute;
+    top: 380px;
+    left: 0px;
+    width: 100vw;
+    background-size: cover;
+    padding: 3px;
+
 }
 #linkBox{
     font-size: x-large;

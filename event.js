@@ -29,6 +29,7 @@ function pageCng(pg){
     page[2]="fd";
     page[3]="gr";
     page[4]="event";
+    page[5]="note"
     let target = document.getElementById(page[now]);
     target.className="close";
     target=document.getElementById(page[pg]);
