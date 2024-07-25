@@ -64,8 +64,8 @@ header{
     position: fixed;
     top:-18px;
     left:calc(50% - 60px);
-    height: 120px;
-    width: 120px;
+    height: 0px;
+    width: 0px;
     opacity: 0;
 }
 #hLg.active{
@@ -84,8 +84,8 @@ header{
     position: fixed;
     top:-18px;
     left:calc(50% - 60px);
-    height: 120px;
-    width: 120px;
+    height: 0px;
+    width: 0px;
     opacity: 0;
     animation-name: closePageAnime;
     animation-fill-mode: forwards;
