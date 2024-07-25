@@ -35,10 +35,37 @@ function pageCng(pg){
     target=document.getElementById(page[pg]);
     target.className="active";
     now=pg;
-
+    if(now==0){
+      target=document.getElementById("hLg");
+      target.className="close";
+    }else{
+      target=document.getElementById("hLg");
+      target.className="active";
+    }
     hmbCng()
 }
 
+function home(pg){
+  const page=[];
+  page[0]="home";
+  page[1]="guide";
+  page[2]="fd";
+  page[3]="gr";
+  page[4]="event";
+  page[5]="note"
+  let target = document.getElementById(page[now]);
+  target.className="close";
+  target=document.getElementById(page[pg]);
+  target.className="active";
+  now=pg;
+  if(now==0){
+    target=document.getElementById("hLg");
+    target.className="close";
+  }else{
+    target=document.getElementById("hLg");
+    target.className="active";
+  }
+}
 
 
 

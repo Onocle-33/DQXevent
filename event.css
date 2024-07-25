@@ -55,16 +55,42 @@ header{
         #1f2356 90%, 
         #1e5dc238 100%, transparent);
     position: fixed;
+    text-align: center;
     width: 100%;
     height: 85px;
     z-index: 70;
 }
 #hLg{
     position: fixed;
-    top:0px;
-    left:100px;
+    top:-18px;
+    left:calc(50% - 60px);
     height: 120px;
     width: 120px;
+    opacity: 0;
+}
+#hLg.active{
+    position: fixed;
+    top:-18px;
+    left:calc(50% - 60px);
+    height: 120px;
+    width: 120px;
+    opacity: 1;
+    animation-name: fadeInAnime;
+    animation-fill-mode: forwards;
+    animation-duration: 0.5s;
+    animation-timing-function: ease;
+}
+#hLg.close{
+    position: fixed;
+    top:-18px;
+    left:calc(50% - 60px);
+    height: 120px;
+    width: 120px;
+    opacity: 0;
+    animation-name: closePageAnime;
+    animation-fill-mode: forwards;
+    animation-duration: 0.5s;
+    animation-timing-function: ease;
 }
 
 .lgBox{
