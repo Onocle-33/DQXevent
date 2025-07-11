@@ -69,9 +69,10 @@ function home(pg){
 
 
 function pass(){
-  let pass = document.getElementById("ps");
+  let pass = document.getElementById("ps").value
+  console.log(pass);
   if(pass=="3rebe"){
-    window.open("https://youtu.be/B-dLBhD7sjE","_blank");
+    window.open("https://youtu.be/B-dLBhD7sjE");
   }
   
 return
