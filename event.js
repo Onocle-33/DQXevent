@@ -1,5 +1,5 @@
 let now=0;
-
+let urls
 
 function hmbCng(){
     let target = document.getElementById("hmbOver");
@@ -68,6 +68,12 @@ function home(pg){
 }
 
 
-
-
+function pass(){
+  let pass = document.getElementById("ps");
+  if(pass=="3rebe"){
+    window.open("https://youtu.be/B-dLBhD7sjE","_blank");
+  }
+  
+return
+}
 
