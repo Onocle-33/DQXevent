@@ -893,6 +893,9 @@ header{
 #hiroba{
     color: aqua;
 }
+#hiroba:visited{
+    color: aquamarine;
+}
 #noteBox{
     background-image: linear-gradient(
         to right, transparent, #7802e600 0%, 
