@@ -932,6 +932,41 @@ header{
     margin-left: auto;
     margin-right: auto;
 } 
+
+
+#present{
+    position: absolute;
+    opacity: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -10;
+    top:0;
+    overflow:hidden;
+}
+#present.active{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: 60;
+    top:0;
+    animation-name: fadeInAnime;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    overflow-y: scroll;
+}
+#present.close{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: -10;
+    top:0;
+    animation-name: closePageAnime;
+    animation-fill-mode: forwards;
+    animation-duration: 0.5s;
+    animation-timing-function: ease;
+    overflow: hidden;
+}
 @keyframes lgAnime{
     0%{
         top:100px;

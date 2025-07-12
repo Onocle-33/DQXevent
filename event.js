@@ -1,5 +1,8 @@
 let now=0;
 let urls
+const pz=[];
+pz[0,0]="8rzs"
+pz[0,1]="img/hi712.png"
 
 function hmbCng(){
     let target = document.getElementById("hmbOver");
@@ -30,6 +33,7 @@ function pageCng(pg){
     page[3]="gr";
     page[4]="event";
     page[5]="note"
+    page[6]="present"
     let target = document.getElementById(page[now]);
     target.className="close";
     target=document.getElementById(page[pg]);
@@ -42,7 +46,9 @@ function pageCng(pg){
       target=document.getElementById("hLg");
       target.className="active";
     }
-    hmbCng()
+    if(pg!=6){
+      hmbCng()
+    }
 }
 
 function home(pg){
@@ -53,6 +59,7 @@ function home(pg){
   page[3]="gr";
   page[4]="event";
   page[5]="note"
+  page[6]="present"
   let target = document.getElementById(page[now]);
   target.className="close";
   target=document.getElementById(page[pg]);
@@ -73,6 +80,15 @@ function pass(){
   console.log(pass);
   if(pass=="3rebe"){
     window.open("https://youtu.be/B-dLBhD7sjE");
+    return
+  }
+  for(let i=0;i<pz.length;i++){
+    if(pass==pz[i,0]){
+      let elm=document.getElementById("pre");
+      elm.src=pz[i,1]
+      pageCng(6);
+      return
+    }
   }
   
 return
