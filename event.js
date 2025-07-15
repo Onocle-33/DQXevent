@@ -147,7 +147,8 @@ function drawText(canvas_id, text_id){
     ctx.fillText("Name:"+text.value, x, y);
 
     document.getElementById("res").innerHTML=
-          "<p id='res'>作成が完了しました！<br>画像を右クリックするか長押しで<br>保存することができます。</p>";
+          "<p id='res'>作成が完了しました！</p>"
+          +"<button id='dl' onclick=dl()>download</button>";
     document.getElementById("present2").scrollBy(0,500);
     
     return
@@ -180,4 +181,14 @@ function loadImage(id,sr)
 
 function getimg(){
   return(im);
+}
+
+function dl(){
+	let canvas = document.getElementById("preview");
+
+	let link = document.createElement("a");
+	link.href = canvas.toDataURL("image/png");
+	link.download = im;
+	link.click();
+  return;
 }
