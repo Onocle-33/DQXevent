@@ -213,9 +213,31 @@
                 ダウンロードして思い出に<br>
                 残してくださると嬉しいです。
             </p>
+            
         </div>
         <div id="noteBox">
             <img id="pre" src="">
+        </div>
+    </div>
+
+    <div id="present2">
+        <div id="guideMsgBox">
+            <p id="guideMsg">PRESENT</p>
+        </div>
+        <div id="nsBox">
+            <p>
+                本日はご来店ありがとうございました！<br>
+                パスワード特典のコレクションカードを<br>
+                回ごとに違うイラストで<br>
+                作ることができます。<br><br>
+                名前を入力して、<br>
+                作成ボタンを押してください。<br><br>
+
+                名前:<input type="text" id="canvas_text" value="">
+                <button onclick="drawText('preview', 'canvas_text');">作成</button>
+            </p>
+            <p id="im"><canvas id="preview"></canvas></p>
+            <p id="res"></p>
         </div>
     </div>
 
