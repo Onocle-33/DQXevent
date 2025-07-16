@@ -1,16 +1,15 @@
 let now=0;
 let urls
 const pz=[];
-for(let i=0;i<999;i++){
-  pz[i,0]=""
-  pz[i,1]=""
+for(let i=0;i<=999;i++){
+  pz.push(["",""])
 }
-pz[0,0]="8rzs"
-pz[0,1]="img/hi712.png"
-pz[1,0]="naja"
-pz[1,1]="img/bh001.png"
-pz[999,0]="test"
-pz[999,1]="img/bh000.png"
+pz[0][0]="8rzs"
+pz[0][1]="img/hi712.png"
+pz[1][0]="naja"
+pz[1][1]="img/bh001.png"
+pz[999][0]="test"
+pz[999][1]="img/bh000.png"
 var im;
 
 function hmbCng(){
@@ -99,16 +98,16 @@ function pass(){
     window.open("https://youtu.be/B-dLBhD7sjE");
     return
   }
-  for(let i=0;i>pz.length-1;i++){
+  for(let i=0;i<pz.length;i++){
     console.log("loop:"+i);
-    if(pass==pz[i,0]&&pz[i,0]!=""){
+    if(pass==pz[i][0]&&pass!=""){
       if(i==0){
         let elm=document.getElementById("pre");
-        elm.src=pz[i,1]
+        elm.src=pz[i][1]
         pageCng(6);
         return
       }else{
-        im=pz[i,1];
+        im=pz[i][1];
         loadImage('preview',im)
         pageCng(7);
         return
