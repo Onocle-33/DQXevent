@@ -1001,7 +1001,6 @@ header{
     animation-timing-function: ease;
     overflow: hidden;
 }
-
 #preview{
     opacity: 0;
     width: 18%;
@@ -1018,6 +1017,25 @@ header{
     height: 18%;
 }
 
+@media screen and (max-width:768px) {
+    #preview {
+        opacity: 0;
+        width: 40%;
+        height: 40%;
+    }
+
+    #preview.active {
+        opacity: 1;
+        width: 40%;
+        height: 40%;
+    }
+
+    #preview.close {
+        opacity: 0;
+        width: 40%;
+        height: 40%;
+    }
+}
 
 @keyframes lgAnime{
     0%{
