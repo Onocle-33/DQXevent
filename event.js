@@ -99,7 +99,7 @@ function pass(){
     window.open("https://youtu.be/B-dLBhD7sjE");
     return
   }
-  for(let i=0;i<pz.length-1;i++){
+  for(let i=0;i>pz.length-1;i++){
     console.log("loop:"+i);
     if(pass==pz[i,0]&&pz[i,0]!=""){
       if(i==0){
