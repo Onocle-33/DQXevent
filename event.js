@@ -1,6 +1,10 @@
 let now=0;
 let urls
 const pz=[];
+for(let i=0;i<999;i++){
+  pz[i,0]=""
+  pz[i,1]=""
+}
 pz[0,0]="8rzs"
 pz[0,1]="img/hi712.png"
 pz[1,0]="naja"
@@ -95,8 +99,9 @@ function pass(){
     window.open("https://youtu.be/B-dLBhD7sjE");
     return
   }
-  for(let i=-1;i<pz.length;i++){
-    if(pass==pz[i,0]){
+  for(let i=0;i<pz.length-1;i++){
+    console.log("loop:"+i);
+    if(pass==pz[i,0]&&pz[i,0]!=""){
       if(i==0){
         let elm=document.getElementById("pre");
         elm.src=pz[i,1]
