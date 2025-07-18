@@ -910,6 +910,20 @@ header{
     padding: 3px;
 
 }
+#hiBox{
+    background-image: linear-gradient(
+        to right, transparent, #7802e600 0%, 
+        #46275C 20%, 
+        #46275C 80%, 
+        #00000000 100%, transparent);
+    position: absolute;
+    top: 750px;
+    left: 0px;
+    width: 100vw;
+    background-size: cover;
+    padding: 3px;
+
+}
 #linkBox{
     font-size: x-large;
     position: relative;
