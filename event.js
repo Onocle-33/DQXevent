@@ -10,6 +10,8 @@ pz[1][0]="naja"
 pz[1][1]="img/bh001.png"
 pz[2][0]="magicmoon"
 pz[2][1]="img/bh002.png"
+pz[3][0]="redl"
+pz[3][1]="img/bh003.png"
 pz[999][0]="test"
 pz[999][1]="img/bh000.png"
 var im;
