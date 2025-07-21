@@ -18,8 +18,9 @@ var im;
 
 const musics=[];
 musics.push(["淡いまじない","music/magic-radiance.mp3"]);
-musics.push(["陽だまりの足音","music/walk.mp3"]);
 musics.push(["影","music/reflection.mp3"]);
+musics.push(["陽だまりの足音","music/walk.mp3"]);
+musics.push(["星明かりのとばり","music/stary-night.mp3"]);
 
 function hmbCng(){
     let target = document.getElementById("hmbOver");
