@@ -16,6 +16,11 @@ pz[999][0]="test"
 pz[999][1]="img/bh000.png"
 var im;
 
+const musics=[];
+musics.push(["淡いまじない","music/magic-radiance.mp3"]);
+musics.push(["陽だまりの足音","music/walk.mp3"]);
+musics.push(["影","music/reflection.mp3"]);
+
 function hmbCng(){
     let target = document.getElementById("hmbOver");
     if (target.className == null || target.className==""||target.className=="close") {
@@ -44,9 +49,10 @@ function pageCng(pg){
     page[2]="fd";
     page[3]="gr";
     page[4]="event";
-    page[5]="note"
-    page[6]="present"
-    page[7]="present2"
+    page[5]="music"
+    page[6]="note"
+    page[90]="present"
+    page[91]="present2"
     document.getElementById("preview").className="close";
     document.getElementById("res").innerHTML="<p id='res'></p>";
     let target = document.getElementById(page[now]);
@@ -62,7 +68,7 @@ function pageCng(pg){
       target=document.getElementById("hLg");
       target.className="active";
     }
-    if(pg!=6&&pg!=7){
+    if(pg!=90&&pg!=91){
       hmbCng()
     }
 }
@@ -74,9 +80,10 @@ function home(pg){
   page[2]="fd";
   page[3]="gr";
   page[4]="event";
-  page[5]="note"
-  page[6]="present"
-  page[7]="present2"
+  page[5]="music"
+  page[6]="note"
+  page[90]="present"
+  page[91]="present2"
   let target = document.getElementById(page[now]);
   target.scrollTo(0,0);
   target.className="close";
@@ -108,12 +115,12 @@ function pass(){
       if(i==0){
         let elm=document.getElementById("pre");
         elm.src=pz[i][1]
-        pageCng(6);
+        pageCng(90);
         return
       }else{
         im=pz[i][1];
         loadImage('preview',im)
-        pageCng(7);
+        pageCng(91);
         return
       }
     }
@@ -202,4 +209,19 @@ function dl(){
 	link.download = im;
 	link.click();
   return;
+}
+
+function music(){
+  let name;
+  let src;
+  let res="";
+  for(let i=0;i<musics.length;i++){
+    name=musics[i][0];
+    src=musics[i][1];
+    res=res+"<p>"+name+"</p>"
+    res=res+"<audio id='play' controls loop src="+src+" type='audio/mp3'></audio>";
+  }
+  res=res+"<br><br><br>";
+  document.getElementById("musicBox").innerHTML=res;
+  return
 }

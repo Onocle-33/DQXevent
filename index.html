@@ -24,7 +24,7 @@
   </head> 
 
   <script src="event.js"></script>
-  <body>
+  <body onload="music()">
     
 
     <header>
@@ -46,6 +46,7 @@
                 ドラゴンクエストXオンライン内にて開催する<br>
                 プレイヤーイベント(プレイべ)の個人HPです。
             </p>
+            
         </div>
     </div>
     
@@ -196,6 +197,23 @@
         </div>
         
     </div>
+
+    <div id="music">
+        <div id="guideMsgBox">
+            <p id="guideMsg">MUSIC<p>
+        </div>
+        <div id="musicMsgBox">
+            <p>ここではオーナーの作曲した音楽を<br>
+                聴くことができます。<br>
+                拙い出来ですが、イベント中や<br>
+                暇なお時間に聴いていただけると幸いです。<br>
+            </p>
+        </div>
+        <div id="musicBox">
+        </div>
+
+    </div>
+    
     <div id="note">
         <div id="guideMsgBox">
             <p id="guideMsg">Etc...</p>
@@ -278,6 +296,9 @@
                 EVENT
             </a>
             <a href="#" id="link" onclick=pageCng(5)>
+                MUSIC
+            </a>
+            <a href="#" id="link" onclick=pageCng(6)>
                 Etc...
             </a>
         </div>
