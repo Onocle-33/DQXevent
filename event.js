@@ -16,6 +16,8 @@ pz[4][0]="heart"
 pz[4][1]="img/bh004.png"
 pz[5][0]="sound"
 pz[5][1]="img/bh005.png"
+pz[5][0]="hat"
+pz[5][1]="img/bh006.png"
 pz[999][0]="test"
 pz[999][1]="img/bh000.png"
 var im;
