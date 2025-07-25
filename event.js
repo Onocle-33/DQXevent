@@ -26,6 +26,7 @@ musics.push(["影","music/reflection.mp3"]);
 musics.push(["陽だまりの足音","music/walk.mp3"]);
 musics.push(["星明かりのとばり","music/stary-night.mp3"]);
 musics.push(["絢爛","music/kenran.mp3"]);
+musics.push(["オーパーツ","music/void-tec.mp3"]);
 
 function hmbCng(){
     let target = document.getElementById("hmbOver");
