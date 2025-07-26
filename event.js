@@ -176,7 +176,7 @@ function drawText(canvas_id, text_id){
           "<p id='res'>作成が完了しました！<br>"
           +"下のボタンからダウンロードできます。</p>"
           +"<button id='dl' onclick=dl()>download</button>";
-    document.getElementById("present2").scrollBy(0,350);
+    document.getElementById("present2").scrollTo(0,350);
     
     return
     
