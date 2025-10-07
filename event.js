@@ -22,6 +22,8 @@ pz[7][0]="night"
 pz[7][1]="img/bh007.png"
 pz[8][0]="DQV"
 pz[8][1]="img/bh008.png"
+pz[8][0]="estr"
+pz[8][1]="img/bh009.png"
 pz[999][0]="test"
 pz[999][1]="img/bh000.png"
 var im;
